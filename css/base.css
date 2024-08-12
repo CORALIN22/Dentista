@@ -47,6 +47,7 @@ html:focus-within {
 html,
 body {
   height: 100%;
+  overflow-x: hidden;
 }
 
 /* Set core body defaults */
@@ -58,8 +59,7 @@ body {
 
 /* A elements that don't have a class get default styles */
 a:not([class]) {
-  -webkit-text-decoration-skip: ink;
-          text-decoration-skip-ink: auto;
+  text-decoration-skip-ink: auto;
 }
 
 a {
@@ -93,3 +93,5 @@ svg {
     scroll-behavior: auto !important;
   }
 }
+
+/*# sourceMappingURL=base.css.map */

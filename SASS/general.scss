@@ -9,8 +9,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 8rem;
-  height: 4rem;
-
+  height: 5rem;
+  background-color: rgba(255, 255, 255, 0.97);
   position: relative;
 }
 
@@ -35,6 +35,20 @@
 /**************************/
 
 // Main navigation list styles
+// .main-nav-list li:not(:last-child){
+//   color: red;
+// }
+
+.main-nav-list {
+  background-color: yellow;
+  margin-right: 300px; /* Space between items */
+  padding: 10px; /* Padding for visibility */
+}
+
+.main-nav-list li:last-child {
+  margin-right: 0; /* Remove margin from the last item */
+
+}
 .main-nav-list {
   display: flex;
   flex-direction: row;
@@ -43,7 +57,7 @@
 
   // Styles for each link within the nav list
   .navlink {
-    a {
+    
       display: inline-block;
       padding: 0 8px; // Adjust padding if necessary
       color: inherit; // Use color from parent
@@ -72,26 +86,7 @@
         color: $clr-primary-500;
       }
     }
-  }
-}
-
-/* MOBILE */
-.btn-mobile-nav {
-  border: none;
-  background: none;
-  cursor: pointer;
-
-  display: none;
-
-  .icon-mobile-nav {
-    height: 4.8rem;
-    width: 4.8rem;
-    color: $clr-primary-500;
-  }
-
-  .icon-mobile-nav[name='close-outline'] {
-    display: none;
-  }
+  
 }
 
 .outlined-btn {
@@ -106,6 +101,50 @@
     color: $clr-primary-50;
   }
 }
+
+
+/* MOBILE */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+
+
+  .icon-mobile-nav {
+    height: 2.5rem;
+    width: 2.5rem;
+    color: $clr-primary-500;
+   
+
+  }
+
+  .icon-mobile-nav[name='close-outline'] {
+    display: none;
+  }
+}
+
+///Sticky Navigation
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5rem;
+  z-index: 999;
+  background-color:rgba(255, 255, 255, 0.97);;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.3);
+
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.sticky .hero-section {
+  margin-top: 9.6rem;
+}
+
+
 
 .hero-section {
   height: 100vh;
